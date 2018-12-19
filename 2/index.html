@@ -12,8 +12,29 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
   <head>
     <meta charset="utf-8">
     <title></title>
+    <style>
+    	.row img{
+			filter: saturate(0%);
+    	} 
+    </style>
   </head>
   <body>
+  	 	<div class="containr">
+  		<div class="row">
+  			<img src="img/foto.png" alt="">
+  			<img src="img/foto.png" alt="">
+  			<img src="img/foto.png" alt=""><img src="img/foto.png" alt=""><img src="img/foto.png" alt="">
+  			<img src="img/foto.png" alt=""><img src="img/foto.png" alt="">
+  			<img src="img/foto.png" alt="">
+  		</div>
+  	</div>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<script type="text/javascript">
+		$('img').click(function(){
+			$('img').addClass("satura");
+		})	
+
+	</script>
 
   </body>
 </html>
