@@ -13,9 +13,13 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
     <meta charset="utf-8">
     <title></title>
     <style>
-    	.row img{
+    	img{
 			filter: saturate(0%);
     	} 
+      .satura{
+        filter: saturate(100%);
+        transition: 1s;
+      }
     </style>
   </head>
   <body>
@@ -30,9 +34,14 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
   	</div>
   		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 	<script type="text/javascript">
-		$('img').click(function(){
-			$('img').addClass("satura");
-		})	
+		
+    $(function(){
+      $('img').click(function(){
+          $('.satura').not(this).removeClass('satura');
+          $(this).toggleClass('satura');
+
+      })
+    })
 
 	</script>
 

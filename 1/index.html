@@ -18,6 +18,7 @@ Tip: Investigar el evento window.onload
     </style>
   </head>
   <body>
+    <h1>HOLA MAMITA!</h1>
   	<div class="containr">
   		<div class="row">
   			<img src="img/foto.png" alt="">
@@ -30,8 +31,11 @@ Tip: Investigar el evento window.onload
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 	<script type="text/javascript">
-		window.onload = function() {
-	  alert();
+    $(document).ready(function(){
+      alert('Casi listo');
+    });
+  		window.onload = function() {
+  	  alert('listo');
 	};
 	</script>
 
